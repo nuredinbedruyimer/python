@@ -7,6 +7,8 @@ class Account:
         self.balance += amount
         
         print(f"{self.owner} Deposit {amount}, New Balance : {self.balance}")
+    def balance_inquery(self):
+        print(f"{self.owner} Your Balance : {self.balance}")
     def withdraw(self, amount):
         if self.balance >= amount:
             self.balance -= amount
