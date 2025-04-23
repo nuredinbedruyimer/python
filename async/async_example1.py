@@ -3,7 +3,7 @@ import asyncio
 async def tasks(task_name, delay):
     print(f"{task_name} Started")
     #  sleep this function call for 2 second intentionaly before it finishs its task
-    await asyncio.sleep(2)
+    await asyncio.sleep(delay)
     print(f"{task_name} Finished")
 
 async def main():
