@@ -1,7 +1,7 @@
 import time
 
 def timing(func):
-    def wrapper(*args, **kwargs):
+    def wrapper(name, *args, **kwargs):
         start = time.time()
         result = func(*args, **kwargs)
         print("The args : ", *args, **kwargs)
